@@ -1,0 +1,53 @@
+version: '3'
+name: 'sulu_cms'
+services:
+  php:
+    build:
+      context: php
+    user: ${PHP_USER_ID}
+    ports:
+      - 8080:80
+    volumes:
+      # Use :cached flag to speed up cache: https://github.com/docker/for-mac/issues/1592
+      - ${PROJECT_PATH}:/var/www/html:cached
+      - /var/www/html/vendor
+    networks:
+      default:
+        aliases:
+          - ${PROJECT_DOMAIN}
+    environment:
+      PROJECT_DOMAIN: ${PROJECT_DOMAIN}
+      MYSQL_DATABASE: ${MYSQL_DATABASE}
+      MYSQL_USER: ${MYSQL_USER}
+      MYSQL_PASSWORD: ${MYSQL_PASSWORD}
+
+
+  mysql:
+    image: mysql:8.0.19
+    platform: linux/x86_64
+    command: --default-authentication-plugin=mysql_native_password --sql_mode=""
+    ports:
+      - 3366:3306
+    volumes:
+      - ./data/mysql:/var/lib/mysql
+    environment:
+      MYSQL_ALLOW_EMPTY_PASSWORD: 'yes'
+      MYSQL_DATABASE: ${MYSQL_DATABASE}
+      MYSQL_USER: ${MYSQL_USER}
+      MYSQL_PASSWORD: ${MYSQL_PASSWORD}
+
+  redis:
+    image: redis
+    environment:
+      TZ: "Europe/Berlin"
+    volumes:
+      - ./data/redis:/data
+    ports:
+      - 6380:6380
+
+volumes:
+  ###> doctrine/doctrine-bundle ###
+  db-data:
+  ###< doctrine/doctrine-bundle ###
+  elasticsearch-data:
+  composer-vendor:

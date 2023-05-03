@@ -1,0 +1,22 @@
+# Define your admin routes here
+controllers:
+    resource: ../src/Controller/Admin/
+    type: attribute
+
+#app_tiles_api:
+#    type: rest
+#    prefix: /admin/api
+#    resource: App\Controller\Admin\TileController
+#    name_prefix:
+
+#app_tile_sections_api:
+#    type: rest
+#    prefix: /admin/api
+#    resource: App\Controller\Admin\TileSectionController
+#    name_prefix:
+
+#app_tile_multiplications_api:
+#    type: rest
+#    prefix: /admin/api
+#    resource: App\Controller\Admin\TileMultiplicationController
+#    name_prefix:

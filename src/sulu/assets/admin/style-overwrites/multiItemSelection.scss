@@ -1,0 +1,7 @@
+/* import original stylesheet to keep original styling */
+@import 'sulu-admin-bundle/components/MultiItemSelection/multiItemSelection.scss';
+
+.list {
+  max-height: 100vh;
+  overflow: auto;
+}

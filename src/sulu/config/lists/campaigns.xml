@@ -1,0 +1,57 @@
+<?xml version="1.0" ?>
+<list xmlns="http://schemas.sulu.io/list-builder/list">
+    <key>campaigns</key>
+
+    <properties>
+        <property name="id" visibility="always">
+            <field-name>id</field-name>
+            <entity-name>App\Entity\Campaign</entity-name>
+        </property>
+        <property name="title" visibility="always">
+            <field-name>title</field-name>
+            <entity-name>App\Entity\Campaign</entity-name>
+        </property>
+        <property name="fileKey" visibility="always">
+            <field-name>fileKey</field-name>
+            <entity-name>App\Entity\Campaign</entity-name>
+        </property>
+        <property name="notificationType" visibility="always">
+            <field-name>notificationType</field-name>
+            <entity-name>App\Entity\Campaign</entity-name>
+        </property>
+        <property name="campaignId" visibility="always">
+            <field-name>campaignId</field-name>
+            <entity-name>App\Entity\Campaign</entity-name>
+        </property>
+        <property name="externalId" visibility="always">
+            <field-name>externalId</field-name>
+            <entity-name>App\Entity\Campaign</entity-name>
+        </property>
+        <property name="serviceId" visibility="always">
+            <field-name>serviceId</field-name>
+            <entity-name>App\Entity\Campaign</entity-name>
+        </property>
+        <property name="isActive" translation="Is Active?" visibility="always"
+                  searchability="yes" width="shrink">
+            <field-name>isActive</field-name>
+            <entity-name>App\Entity\Campaign</entity-name>
+            <transformer type="bool"/>
+            <filter type="boolean"/>
+        </property>
+        <property name="isCloseable" translation="Is Closeable?" visibility="always"
+                  searchability="yes" width="shrink">
+            <field-name>isCloseable</field-name>
+            <entity-name>App\Entity\Campaign</entity-name>
+            <transformer type="bool"/>
+            <filter type="boolean"/>
+        </property>
+        <property name="isDependentOnExternalProvider" translation="Is Dependent On External Provider?"
+                  visibility="always"
+                  searchability="yes" width="shrink">
+            <field-name>isDependentOnExternalProvider</field-name>
+            <entity-name>App\Entity\Campaign</entity-name>
+            <transformer type="bool"/>
+            <filter type="boolean"/>
+        </property>
+    </properties>
+</list>

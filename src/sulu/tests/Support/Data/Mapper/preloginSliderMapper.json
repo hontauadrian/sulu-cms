@@ -1,0 +1,18 @@
+{
+  "id": 2,
+  "headline": "unitTest prelogin slider",
+  "backgroundColor": "black",
+  "description": "<p>This is an example<\/p>",
+  "showOnlyOnce": true,
+  "linkTitle": "This is not google",
+  "linkUrl": "https:\/\/www.google.com",
+  "image": [
+    {
+      "url": "http:\/\/sulu.localhost:8080\/uploads\/media\/2000x2000-inset\/03\/23-102-importedDirectusImage.jpg?v=1-0",
+      "dimensions": {
+        "width": 800,
+        "height": 338
+      }
+    }
+  ]
+}

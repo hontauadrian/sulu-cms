@@ -1,0 +1,11 @@
+actor: ApiTester
+suite_namespace: Tests\Api
+modules:
+  # enable helpers as array
+  enabled:
+    - Symfony:
+        app_path: 'src'
+        environment: test
+    - REST:
+        url: /admin/api/
+        depends: Symfony

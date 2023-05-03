@@ -1,0 +1,5 @@
+services:
+  GuzzleHttp\Client:
+    class: GuzzleHttp\Client
+    arguments:
+      - { timeout: 25 , http_errors: false, decode_content: true, verify: false, cookies: false }

@@ -1,0 +1,133 @@
+{
+  "id": 58,
+  "type": "SELF-SERVICE",
+  "multiplication": {
+    "type": "CONTRACT-METER-READING",
+    "contract": {
+      "acceptedContractTypes": [
+        "power",
+        "gas"
+      ]
+    }
+  },
+  "hideable": true,
+  "hideOptions": [
+    {
+      "id": 2,
+      "timeSpan": 7884009,
+      "label": "In 3 Monaten noch mal fragen",
+      "url": null
+    }
+  ],
+  "sections": [
+    {
+      "id": 1,
+      "type": "STANDARD",
+      "headline": "unitTestSection1",
+      "description": "<p>This is an example<\/p>",
+      "theme": "light",
+      "image": [
+        {
+          "url": "http:\/\/sulu.localhost:8080\/uploads\/media\/2000x2000-inset\/03\/23-102-importedDirectusImage.jpg?v=1-0",
+          "dimensions": {
+            "width": 800,
+            "height": 338
+          }
+        }
+      ],
+      "multiplicationData": {
+        "id": 1,
+        "headline": "CONTRACT-NAME",
+        "subheadline": "CONTRACT-ID",
+        "icon": null
+      },
+      "form": {
+        "bottomText": "<p><span style=\"color: #ecf0f1;\">Ich kann meine Einwilligung jederzeit ohne Angabe von Gr\u00fcnden gegen\u00fcber der E WIE EINFACH GmbH, Postfach 18 03 61,39030 Magdeburg oder per E-Mail unter\u00a0<a href=\"mailto:datenschutz@e-wie-einfach.de\">datenschutz@e-wie-einfach.de<\/a>\u00a0mit Wirkung f\u00fcr die Zukunft widerrufen. Die E WIE EINFACH GmbH wird mich im Folgenden \u00fcber den jeweiligen Kommunikationsweg nicht mehr zu Werbe- und Marktforschungszwecken kontaktieren.<\/span><\/p>",
+        "inputs": [
+          {
+            "id": 1,
+            "type": "CHECKBOX",
+            "name": "Imported Input",
+            "label": "Ich willige ein, dass mich die E WIE EINFACH GmbH zu Werbezwecken f\u00fcr Energie-, Unternehmens- und Haushaltsl\u00f6sungen, sowie Vorteilsangebote (z.B. Strom, Erdgas, intelligente Z\u00e4hler sowie , Energieliefervertr\u00e4gen (Strom, Gas) mit Bundleprodukt aus den Bereichen Streaming, Haushaltselektronik, Fitness, Mobilit\u00e4tsdienstleistungen) per elektronischer Post (z.B. E-Mail) kontaktiert.&nbsp;",
+            "required": false,
+            "lines": 4,
+            "placeholder": null
+          }
+        ]
+      },
+      "selfService": {
+        "id": 1,
+        "type": "METER-READING",
+        "currentValueLabel": "Mein Z\u00e4hlerstand",
+        "currentValue": "VALUE",
+        "lastUpdateDateLabel": "Letztes Ablesedatum",
+        "lastUpdateDateValue": "DATE"
+      },
+      "buttons": [
+        {
+          "id": 8,
+          "type": "primary",
+          "label": "Gutschein aktivieren",
+          "action": "navigateToUrlAndSwitchToSection",
+          "url": "https:\/\/www.google.com",
+          "httpMethod": "GET",
+          "destinationSectionId": 2,
+          "hideSwipableAfterAction": false,
+          "reloadTileAfterAction": false,
+          "payload": null
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "type": "INFO",
+      "headline": "unitTestSection2",
+      "description": "<p>This is an example<\/p>",
+      "theme": "light",
+      "image": [
+        {
+          "url": "http:\/\/sulu.localhost:8080\/uploads\/media\/2000x2000-inset\/03\/23-102-importedDirectusImage.jpg?v=1-0",
+          "dimensions": {
+            "width": 800,
+            "height": 338
+          }
+        }
+      ],
+      "multiplicationData": null,
+      "selfService": null,
+      "buttons": [],
+      "form": null
+    }
+  ],
+  "filters": [
+    {
+      "type": "CAMPAIGN",
+      "criterias": [
+        {
+          "type": "IS-ELIGIBLE",
+          "operator": null,
+          "value": "",
+          "campaignExternalId": "0023",
+          "campaignServiceId": "segmented_universal"
+        }
+      ]
+    },
+    {
+      "type": "TRACKING",
+      "criterias": [
+        {
+          "type": "REJECTED",
+          "operator": null,
+          "value": ""
+        }
+      ]
+    }
+  ],
+  "campaignId": 16,
+  "startDate": "2023-03-18 00:00:00",
+  "endDate": "2023-07-30 00:00:00",
+  "trackingId": "unitTestTile",
+  "sortOrder": 29,
+  "active": true,
+  "isDependentOnExternalProvider": true
+}

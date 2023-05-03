@@ -1,0 +1,20 @@
+{
+  "id": 107,
+  "title": "unittest Campaign",
+  "active": true,
+  "closable": true,
+  "file_key": "unittest Campaign",
+  "ios_min_version": "4.0.5",
+  "android_min_version": "7.0.4",
+  "section": "top",
+  "custom_css_class": "notification-black",
+  "notification_type": "christmas",
+  "campaign_id": 11,
+  "params": "biometricBoxVisible",
+  "external_id": "unittest Campaign",
+  "state_data": "{\"participated\":{\"twig_template\":\"christmas_campaign_bonus_confirmation\"},\"not_participated\":{\"twig_template\":\"christmas_campaign\"}}",
+  "service_id": "christmas2020",
+  "is_regiocom_dependent": true,
+  "start_date": "2023-03-10 00:00:00",
+  "end_date": "2023-08-31 00:00:00"
+}

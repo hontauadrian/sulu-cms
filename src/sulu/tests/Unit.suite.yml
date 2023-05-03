@@ -1,0 +1,21 @@
+# Codeception Test Suite Configuration
+#
+# Suite for unit or integration tests.
+
+actor: UnitTester
+modules:
+    enabled:
+        - Asserts
+        - \Tests\Support\Helper\Unit
+step_decorators: ~
+coverage:
+    enabled: true
+    show_uncovered: true
+    include:
+        - src/*
+    exclude:
+        - src/DataFixtures/*
+        - src/Kernel.php
+        - src/Content/Select/*
+        - src/Admin/*
+        - src/Service/Importer/*
